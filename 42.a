@@ -1,0 +1,9 @@
+	loadc A0 _NMAX	 
+	loadc A1 1
+	loadc A2 42	
+_loop:	subtract A0 A1	
+	jmpz A0 _print	
+	jump _loop
+_print: storei A2 IO
+	exit
+_NMAX:	.data 1 10

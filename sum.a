@@ -1,0 +1,15 @@
+loadi A0 IO ;A0 = max num
+loadc A1 0 ;counter
+loadc A2 0 ;sum
+addi A3 0 ;check
+_loop: addi A1 1 ;increment counter
+    call _proc
+    move A3 A0 ;if counter - max num < 0
+    clear A4
+    move A4 A1
+    subtract A4 A3
+    jmpn A4 _loop ;jump to loop
+storei A2 IO
+exit
+_proc:add A2 A1 ;sum= sum+1
+return
