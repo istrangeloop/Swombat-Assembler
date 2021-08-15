@@ -1,5 +1,5 @@
-#ifndef UTILITY_HPP
-#define UTILITY_HPP
+#ifndef SWOMBAT_HPP
+#define SWOMBAT_HPP
 
 #include <iostream>
 #include <fstream>
@@ -39,4 +39,4 @@ namespace Swombat {
 }
 
 
-#endif	//UTILITY_HPP
+#endif	//SWOMBAT_HPP

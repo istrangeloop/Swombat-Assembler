@@ -1,7 +1,7 @@
 #ifndef	COMPILER_CPP
 #define COMPILER_CPP
 
-#include "utility.hpp"
+#include "swombat.hpp"
 
 using namespace Swombat;
 
@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 		std::cerr << "Incorrect parameters" << std::endl;
 
 	std::string filename_input, filename_output;
-    swombat s;
+    	swombat s;
 	
 	filename_input = argv[1];
 	filename_output = argv[2];
